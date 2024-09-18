@@ -9,8 +9,8 @@
     <title>Hunter Mania</title>
 </head>
 <body>
-    <!-- Encabezado - video -->
-    <header>
+    <!-- Encabezado defino - video e inserto un video que se reproduce en bucle automaticamente -->
+    <header id="INICIO">
         <div class="info">
             <h2>HxH</h2>
             <h3>Los innumerables dragones que llovían eran amenazas menos significativas que los humanos del cielo</h3>
@@ -21,7 +21,7 @@
         </div>
     </header>
 
-    <!-- Menu lateral y fotos -->
+    <!-- Menu lateral , navegacion busqueda y enlaces a redes sociales y fotos -->
     <section>
         <!-- Menu lateral -->
         <div class="menu-lateral">
@@ -35,12 +35,13 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="#">INICIO</a></li>
-                        <li><a href="#">GALERIA</a></li>
-                        <li><a href="#">PAGINAS</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">NOSOTROS</a></li>
-                        <li><a href="#">CONTACTO</a></li>                    
+                        <li><a href="#INICIO">INICIO</a></li>
+                        <li><a href="#GALERIA">GALERIA</a></li>
+                        <li><a href="#BLOG">USUARIOS</a></li>
+                        <li><a href="#NOSOTROS">NOSOTROS</a></li>
+                        <li><a href="#" onclick="openContactWindow()">CONTACTO</a></li>
+                        <!-- Enlaza tu archivo JavaScript externo -->
+                        <script src="js/formulario.js"></script>                    
                     </ul>
                 </nav>
     
@@ -49,7 +50,7 @@
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-youtube"></i>
                 </div>
-                <button>Contactanos ahora!</button>
+                <button onclick="openForm()">¡Contáctanos ahora!</button>
             </div>
         </div>
         <!-- Termina el menu lateral -->
@@ -62,7 +63,7 @@
 
 
             <!-- Comienza Que es HxH  -->
-            <section class="container section_2">
+            <section class="container section_2" id="NOSOTROS">
 
                 <h3 class="section_2-title">Sobre Hunter x Hunter</h3>
                 <div class="us">
@@ -110,7 +111,7 @@
             <!-- Finaliza Que es HxH  -->
 
             <!-- Comienza los tomos de HxH -->
-            <div class="fila">
+            <div class="fila" id="GALERIA">
                 <div class="contenedor-entrada">
                     <span class="titulo">
                         <p>Tomo 1</p>
@@ -218,7 +219,7 @@
 
         <!-- comienza la Tabla de Tomos mas Vendidos -->
 
-        <h1 class="table_titulo">Usuarios mas populares </h1>
+        <h1 class="table_titulo" id="BLOG">Usuarios mas populares </h1>
 
         <br>
         <br>
